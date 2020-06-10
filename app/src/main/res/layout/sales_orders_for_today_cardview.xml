@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sales_orders_for_today_cardview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:elevation="50dp"
+    cardview:cardCornerRadius="10dp"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/sales_orders_for_today_cardview_top_layout"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:background="@color/white"
+            cardview:layout_constraintBottom_toTopOf="@+id/sales_orders_for_today_cardview_bottom_layout"
+            cardview:layout_constraintEnd_toEndOf="parent"
+            cardview:layout_constraintStart_toStartOf="parent"
+            cardview:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/status_textview_soft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="47dp"
+                android:text="For Picking"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                cardview:layout_constraintBottom_toBottomOf="parent"
+                cardview:layout_constraintStart_toStartOf="parent"
+                cardview:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/sales_orders_for_today_cardview_bottom_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/darkGray"
+            android:visibility="gone"
+            cardview:layout_constraintBottom_toBottomOf="parent"
+            cardview:layout_constraintEnd_toEndOf="parent"
+            cardview:layout_constraintStart_toStartOf="parent"
+            cardview:layout_constraintTop_toBottomOf="@+id/sales_orders_for_today_cardview_top_layout">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="1dp"
+                android:background="@color/ghost_white"
+                cardview:layout_constraintBottom_toTopOf="@+id/sales_orders_for_today_cardview_content_recyclerview"
+                cardview:layout_constraintEnd_toEndOf="parent"
+                cardview:layout_constraintStart_toStartOf="parent"
+                cardview:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:text="SO Number"
+                    android:textSize="18dp"
+                    cardview:layout_constraintBottom_toBottomOf="parent"
+                    cardview:layout_constraintStart_toStartOf="parent"
+                    cardview:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Customer"
+                    android:textSize="18dp"
+                    cardview:layout_constraintBottom_toBottomOf="parent"
+                    cardview:layout_constraintEnd_toEndOf="parent"
+                    cardview:layout_constraintHorizontal_bias="0.552"
+                    cardview:layout_constraintStart_toStartOf="parent"
+                    cardview:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="40dp"
+                    android:text="Qty"
+                    android:textSize="18dp"
+                    cardview:layout_constraintBottom_toBottomOf="parent"
+                    cardview:layout_constraintEnd_toEndOf="parent"
+                    cardview:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/sales_orders_for_today_cardview_content_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/ghost_white"
+                cardview:layout_constraintBottom_toBottomOf="parent"
+                cardview:layout_constraintEnd_toEndOf="parent"
+                cardview:layout_constraintHorizontal_bias="0.0"
+                cardview:layout_constraintStart_toStartOf="parent"
+                cardview:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

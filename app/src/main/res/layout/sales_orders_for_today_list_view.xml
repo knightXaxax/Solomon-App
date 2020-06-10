@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="3dp"
+    android:id="@+id/sales_orders_for_today_cardview_listview_content"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/sales_orders_for_today_list_view_top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginBottom="1dp"
+        android:background="@color/ghost_white"
+        app:layout_constraintBottom_toTopOf="@+id/sales_orders_for_today_list_view_bottom_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/soft_so_number_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="34dp"
+            android:text="SO Number"
+            android:textSize="18dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/soft_customer_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Customer"
+            android:textSize="18dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.54"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/soft_qty_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="44dp"
+            android:text="Qty"
+            android:textSize="18dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/sales_orders_for_today_list_view_bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@color/snow"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sales_orders_for_today_list_view_top_layout">
+
+
+        <TextView
+            android:id="@+id/soft_part_textview_soft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="84dp"
+            android:layout_marginTop="16dp"
+            android:text="00000000000"
+            android:textSize="17dp"
+            app:layout_constraintStart_toEndOf="@+id/textView13"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/soft_line_textview_soft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="84dp"
+            android:layout_marginTop="5dp"
+            android:text="00000000000"
+            android:textSize="17dp"
+            app:layout_constraintStart_toEndOf="@+id/textView17"
+            app:layout_constraintTop_toBottomOf="@+id/soft_part_textview_soft" />
+
+        <TextView
+            android:id="@+id/isbn_textview_soft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="84dp"
+            android:layout_marginTop="5dp"
+            android:text="00000000000"
+            android:textSize="17dp"
+            app:layout_constraintStart_toEndOf="@+id/textView14"
+            app:layout_constraintTop_toBottomOf="@+id/soft_line_textview_soft" />
+
+        <TextView
+            android:id="@+id/soft_description_textview_soft"
+            android:layout_width="240dp"
+            android:layout_height="68dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="5dp"
+            android:text="description"
+            android:textSize="17dp"
+            app:layout_constraintStart_toEndOf="@+id/textView15"
+            app:layout_constraintTop_toBottomOf="@+id/isbn_textview_soft" />
+
+        <TextView
+            android:id="@+id/soft_unit_price_textview_soft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="41dp"
+            android:layout_marginTop="8dp"
+            android:text="000000"
+            android:textSize="17dp"
+            app:layout_constraintStart_toEndOf="@+id/textView16"
+            app:layout_constraintTop_toBottomOf="@+id/soft_description_textview_soft" />
+
+        <TextView
+            android:id="@+id/soft_bin_number_textview_soft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="11dp"
+            android:text="0000000
+"
+            android:textSize="17dp"
+            app:layout_constraintStart_toEndOf="@+id/textView18"
+            app:layout_constraintTop_toBottomOf="@+id/soft_unit_price_textview_soft" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="84dp"
+            android:text="Part"
+            android:textSize="17dp"
+            app:layout_constraintEnd_toStartOf="@+id/soft_part_textview_soft"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="84dp"
+            android:text="Line"
+            android:textSize="17dp"
+            app:layout_constraintEnd_toStartOf="@+id/soft_line_textview_soft"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="84dp"
+            android:text="isbn"
+            android:textSize="17dp"
+            app:layout_constraintEnd_toStartOf="@+id/isbn_textview_soft"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="28dp"
+            android:text="Description"
+            android:textSize="17dp"
+            app:layout_constraintEnd_toStartOf="@+id/soft_description_textview_soft"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="53dp"
+            android:layout_marginEnd="41dp"
+            android:text="Unit Price"
+            android:textSize="17dp"
+            app:layout_constraintEnd_toStartOf="@+id/soft_unit_price_textview_soft"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginEnd="24dp"
+            android:text="Bin Number"
+            android:textSize="17dp"
+            app:layout_constraintEnd_toStartOf="@+id/soft_bin_number_textview_soft"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

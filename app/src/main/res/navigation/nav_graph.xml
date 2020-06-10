@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/viewSalesOrderFragment">
+    <fragment
+        android:id="@+id/viewSalesOrderFragment"
+        android:name="com.example.pbs_mobile.ViewSalesOrders.ViewSalesOrderFragment"
+        android:label="view_sales_order_fragment"
+        tools:layout="@layout/view_sales_order_fragment" />
+</navigation>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1e90ff</color>
+    <color name="colorPrimaryDark">#1e90ff</color>
+    <color name="navigationBarColor">#e61e90ff</color>
+    <color name="colorAccent">#4169e1</color>
+    <color name="blue_theme">#1e90ff</color>
+    <color name="mild_dirty_white">#eeeeee</color>
+    <color name="dirty_white">#f8f8f8</color>
+    <color name="whiteSmoke">#f5f5f5</color>
+    <color name="snow">#fffafa</color>
+    <color name="ghost_white">#f8f8ff</color>
+    <color name="white">#ffffff</color>
+    <color name="silver">#c0c0c0</color>
+    <color name="darkGray">#b3808080</color>
+    <color name="black">#000000</color>
+    <color name="teal">#008080</color>
+    <color name="indigo">#4b0082</color>
+    <color name="maroon">#800000</color>
+    <color name="royalBlue">#4169e1</color>
+    <color name="chocolate">#d2691e</color>
+    <color name="firebrick">#b22222</color>
+
+
+
+    <color name="title_color">#000000</color>
+</resources>

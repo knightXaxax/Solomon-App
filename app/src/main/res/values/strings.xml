@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Solomon PBS Mobile</string>
+    <string name="username">username</string>
+    <string name="password">password</string>
+
+    <string name="blank"></string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+
+    <string name="home">home</string>
+    <string name="notification">notification</string>
+    <string name="search">search</string>
+
+    <string name="sales_orders_for_today">Sales Orders For Today</string>
+    <string name="pending_sales_orders">Pending Sales Orders</string>
+    <string name="sales_orders_for_the_week">Sales Orders For the Week</string>
+</resources>
